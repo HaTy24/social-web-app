@@ -1,0 +1,40 @@
+@import "~antd/dist/antd.css";
+
+.Toastify__toast--default {
+  background: rgb(26, 145, 218);
+  color: rgb(255, 255, 255);
+}
+ul {
+	list-style: none;
+	padding-left: 0;
+}
+/* *::-webkit-scrollbar {
+  display: none
+} */
+
+/* @font-face {
+  font-family: "TwitterChirp";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("http://localhost:3000/public/fonts/twitterchirp.ttf");
+}
+
+body {
+  font-family: "TwitterChirp", sans-serif !important;
+  font-weight: 400;
+} */
+
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type=text]:focus {
+  outline: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .grecaptcha-badge {
+      visibility: hidden !important;
+  }
+}

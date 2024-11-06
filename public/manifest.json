@@ -1,0 +1,24 @@
+{
+  "theme_color": "#f69435",
+  "background_color": "#f69435",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "/",
+  "name": "Weknot.io",
+  "short_name": "Weknot",
+  "prefer_related_applications": true,
+  "icons": [
+    {
+      "purpose": "maskable",
+      "sizes": "512x512",
+      "src": "https://static.weknot.io/assets/images/icon512_maskable.png",
+      "type": "image/png"
+    },
+    {
+      "purpose": "any",
+      "sizes": "512x512",
+      "src": "https://static.weknot.io/assets/images/icon512_rounded.png",
+      "type": "image/png"
+    }
+  ]
+}

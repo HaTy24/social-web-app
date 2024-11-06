@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="keywords" content="Weknot, Crypto, Game, Social" />
+
+  <title>Weknot</title>
+  <meta name="description"
+    content="Weknot.io is an innovative social networking platform where users can connect and chat, share posts and stories, and engage in unique investment opportunities by buying personal and company keys for revenue sharing. Users can also enjoy casino games to earn additional company keys. The platform offers a lucrative fee structure, enabling users to earn up to 8% from transactions involving their keys: 5% for the key owner, 3% if a referred user trades, with 1% going to the company pool and another 1% to the community pool, creating a rich potential for financial growth within a vibrant social community.">
+
+  <!-- Facebook Meta Tags -->
+  <meta property="og:url" content="https://weknot.io">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Weknot">
+  <meta property="og:description"
+    content="Weknot.io is an innovative social networking platform where users can connect and chat, share posts and stories, and engage in unique investment opportunities by buying personal and company keys for revenue sharing. Users can also enjoy casino games to earn additional company keys. The platform offers a lucrative fee structure, enabling users to earn up to 8% from transactions involving their keys: 5% for the key owner, 3% if a referred user trades, with 1% going to the company pool and another 1% to the community pool, creating a rich potential for financial growth within a vibrant social community.">
+  <meta property="og:image" content="https://static.weknot.io/assets/images/logo.jpeg">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:domain" content="weknot.io">
+  <meta property="twitter:url" content="https://weknot.io">
+  <meta name="twitter:title" content="Weknot">
+  <meta name="twitter:description"
+    content="Weknot.io is an innovative social networking platform where users can connect and chat, share posts and stories, and engage in unique investment opportunities by buying personal and company keys for revenue sharing. Users can also enjoy casino games to earn additional company keys. The platform offers a lucrative fee structure, enabling users to earn up to 8% from transactions involving their keys: 5% for the key owner, 3% if a referred user trades, with 1% going to the company pool and another 1% to the community pool, creating a rich potential for financial growth within a vibrant social community.">
+  <meta name="twitter:image" content="https://static.weknot.io/assets/images/logo.jpeg">
+
+
+  <!-- Favicon -->
+  <link rel="icon" href="https://static.weknot.io/assets/images/logo.jpeg" />
+
+  <!-- Apple touch icon
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/path/to/apple-touch-icon.png"
+    /> -->
+
+  <!-- Manifest file -->
+  <link rel="manifest" href="/manifest.json" />
+
+  <!-- Theme color -->
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="white" />
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="black" />
+
+  <script src="https://www.google.com/recaptcha/enterprise.js?render=6LdQ1A8pAAAAADs7-WIV6KFFVmqJyGYM7sbH0M-m" async
+    defer></script>
+
+
+  <meta name="google-site-verification" content="rHKIga8ZBhHV1GXKuiz1IhM5Fu3eg_KQhN22YauGH-g" />
+
+
+
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+</head>
+
+<body>
+  <div id="root"></div>
+  <script>
+    if ("serviceWorker" in navigator) {
+      caches.keys().then(function (cacheNames) {
+        cacheNames.forEach(function (cacheName) {
+          caches.delete(cacheName);
+        });
+      });
+      window.addEventListener("load", function () {
+        navigator.serviceWorker
+          .register("serviceWorker.js")
+          .then(
+            function (registration) {
+              console.log(
+                "Worker registration successful",
+                registration.scope
+              );
+            },
+            function (err) {
+              console.log("Worker registration failed", err);
+            }
+          )
+          .catch(function (err) {
+            console.log(err);
+          });
+      });
+
+      // Check app is installed
+      window.addEventListener("appinstalled", () => {
+        const installBox = document.getElementById("install-box");
+        installBox.style.display = "none";
+        deferredPrompt = null;
+      });
+    } else {
+      console.log("Service Worker is not supported by browser.");
+    }
+  </script>
+</body>
+
+</html>
